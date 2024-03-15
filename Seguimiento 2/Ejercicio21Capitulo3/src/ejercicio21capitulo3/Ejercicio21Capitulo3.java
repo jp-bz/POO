@@ -1,4 +1,3 @@
-
 package ejercicio21capitulo3;
 
 import java.util.Scanner;
@@ -22,9 +21,9 @@ public class Ejercicio21Capitulo3 {
         Triangulo calculo_1 = new Triangulo(lado_a, lado_b, lado_c);
         
         if ((lado_a + lado_b > lado_c) && (lado_a + lado_c > lado_b) && (lado_b + lado_c > lado_a)) {
-            calculo_1.perimetro();
-            calculo_1.semiperimetro();
-            calculo_1.area();
+            System.out.println("El perimetro es: " + calculo_1.perimetro());
+            System.out.println("El semiperimetro es: " + calculo_1.semiperimetro());
+            System.out.println("El area es: " + calculo_1.area());
         }   else {
             System.out.println("Los valores introducidos no corresponden a un triangulo valido");
         }
